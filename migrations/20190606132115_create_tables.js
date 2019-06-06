@@ -50,8 +50,8 @@ exports.up = function(knex, Promise) {
 
 exports.down = function(knex, Promise) {
   return knex.schema
-    .dropTableIfExists('dish')
-    .dropTableIfExists('recipe')
-    .dropTableIfExists('recipe_ingredient')
-    .dropTableIfExists('ingredient');
+  .dropTableIfExists('recipe_ingredient')
+  .dropTableIfExists('recipe')
+  .dropTableIfExists('ingredient')
+  .dropTableIfExists('dish');
 };
